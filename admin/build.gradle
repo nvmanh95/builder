@@ -1,0 +1,11 @@
+apply plugin: 'application'
+
+dependencies {
+    compile project(':services')
+}
+
+mainClassName = 'com.builders.admin.AdminEntryPoint'
+
+jar {
+    destinationDir = file("${rootDir}/build/libs")
+}

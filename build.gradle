@@ -1,0 +1,14 @@
+apply plugin: 'base'
+subprojects {
+    apply plugin: 'java'
+    repositories {
+        mavenCentral()
+    }
+}
+subprojects {
+    dependencies {
+        testCompile 'junit:junit:4.12'
+        // https://mvnrepository.com/artifact/javax.servlet/servlet-api
+        compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    }
+}

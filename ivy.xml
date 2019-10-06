@@ -1,0 +1,13 @@
+<ivy-module version="1.0">
+    <info organisation="com.epam.cdp.m2.hw4" module="parent" status="integration">
+    </info>
+    <configurations>
+        <conf name="compile" description="Required to compile application"/>
+        <conf name="test" description="Required for test only" extends="compile"/>
+    </configurations>
+    <dependencies>
+        <dependency org="junit" name="junit" rev="3.8" conf="test->default"/>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+        <dependency org="javax.servlet" name="servlet-api" rev="2.5"/>
+    </dependencies>
+</ivy-module>

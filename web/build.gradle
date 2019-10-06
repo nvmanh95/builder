@@ -1,0 +1,12 @@
+apply plugin: 'application'
+apply plugin: 'war'
+
+dependencies {
+    compile project(':services')
+}
+
+mainClassName = 'com.builders.web.HelloServlet'
+
+war {
+    destinationDir = file("${rootDir}/build/libs")
+}

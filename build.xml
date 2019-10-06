@@ -1,0 +1,6 @@
+<project name="hw4">
+    <import file="admin/ivy.xml"/>
+    <import file="web/ivy.xml"/>
+    <import file="services/ivy.xml"/>
+    <import file="utils/ivy.xml"/>
+</project>

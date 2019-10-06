@@ -1,0 +1,9 @@
+<ivy-module version="1.0">
+    <info organisation="com.epam.cdp.m2.hw4" module="web"/>
+    <configurations>
+        <conf name="services"/>
+    </configurations>
+    <publications>
+        <artifact name="web" type="war"  ext="war"/>
+    </publications>
+</ivy-module>
